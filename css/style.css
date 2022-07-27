@@ -1,3 +1,7 @@
 .edu-fcolor {
     color: #4A4A4A;
 }
+
+.my-img {
+    filter: brightness(50%);
+}
