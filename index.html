@@ -30,10 +30,9 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">Courses</a>
-                            <a class="nav-link" href="#">Deales</a>
-                            <a class="nav-link" href="">Success</a>
-                            <a class="nav-link" href="">About us</a>
+                            <a class="nav-link" href="#Course">Courses</a>
+                            <a class="nav-link" href="#">Success</a>
+                            <a class="nav-link" href="#Joinus">Join us</a>
                             <a class="nav-link" href="">Register</a>
                         </div>
                         <div>
@@ -112,7 +111,7 @@
     <!-- header part end! -->
     <main>
         <!-- courses part start -->
-        <section class="container">
+        <section class="container" id="Course">
             <h2 class="text-center mt-5 fw-semibold text-dark fs-2 ">Discover Our Technical <br> Courses </h2>
             <p class="text-center mb-5">Skill up to success. Techno EDU is a leading destination for online courses
                 <br>
@@ -275,15 +274,44 @@
         </section>
         <!-- Explore Institute part end -->
         <!-- Register part start -->
-        <section class=" container d-flex flex-wrap justify-content-evenly  bg-primary rounded mt-5">
-            <div>
+        <section class=" container d-flex flex-wrap justify-content-evenly  bg-primary rounded mt-5" id="Joinus">
+            <div class="text-white">
 
-                <h2 class="pt-5">Ready to join?</h2>
+                <h2 class="pb-3 pt-5"> Ready to join?</h2>
                 <p>This is where you'll find all you need to know about eligibility, <br>preparing for tests and getting
                     ready for your career in Technoloy. </p>
             </div>
             <div class="pt-5">
-                <button class=" btn btn-outline-primary btn-light ">Register Now</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary btn-light" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Register Now
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Please provide your valid information.
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger">Reset</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save Info</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
         <!-- Register part End -->
